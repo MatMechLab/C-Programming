@@ -1,0 +1,2 @@
+original[1]=52
+copied[1]=60

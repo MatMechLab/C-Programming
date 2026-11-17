@@ -1,0 +1,6 @@
+下标0：full=49，partial=49，zero=0
+下标1：full=52，partial=52，zero=0
+下标2：full=47，partial=0，zero=0
+下标3：full=50，partial=0，zero=0
+inferred的元素个数：3
+容量：8，已保存：3
