@@ -1,0 +1,4 @@
+before: 50 50 50
+round 1: 50 50 50
+round 2: 50 50 50
+sorted: 50 50 50

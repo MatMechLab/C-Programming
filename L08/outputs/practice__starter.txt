@@ -1,0 +1,17 @@
+table:
+49 52 47 50 
+51 50 50 49 
+48 54 46 52 
+target=50
+before: 52 47 50 47 54 49
+UNFINISHED: the candidate values below are not final answers.
+row 0 candidate: max=49 col=0
+row 1 candidate: max=51 col=0
+row 2 candidate: max=48 col=0
+unfinished matches: count=0
+unfinished round 1: candidate=0; 52 47 50 47 54 49
+unfinished round 2: candidate=1; 52 47 50 47 54 49
+unfinished round 3: candidate=2; 52 47 50 47 54 49
+unfinished round 4: candidate=3; 52 47 50 47 54 49
+unfinished round 5: candidate=4; 52 47 50 47 54 49
+unfinished final: 52 47 50 47 54 49

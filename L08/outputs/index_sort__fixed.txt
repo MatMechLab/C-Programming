@@ -1,0 +1,5 @@
+rank 1: index=1 value=48
+rank 2: index=3 value=50
+rank 3: index=0 value=54
+rank 4: index=2 value=54
+original: 54 48 54 50

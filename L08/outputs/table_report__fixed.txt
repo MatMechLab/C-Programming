@@ -1,0 +1,14 @@
+table:
+49 52 47 50 
+51 50 50 49 
+48 54 46 52 
+row 0: sum=198 mean=49.50 max=52 col=1
+row 1: sum=200 mean=50.00 max=51 col=0
+row 2: sum=200 mean=50.00 max=54 col=1
+col 0: sum=148 mean=49.33
+col 1: sum=156 mean=52.00
+col 2: sum=143 mean=47.67
+col 3: sum=151 mean=50.33
+first 50: row=0 col=3
+all 50: (0,3) (1,1) (1,2) count=3
+alerts: (0,2)=47 (2,1)=54 (2,2)=46 count=3

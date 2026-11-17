@@ -1,0 +1,2 @@
+comparisons=15 swaps=5
+sorted: 47 47 49 50 52 54

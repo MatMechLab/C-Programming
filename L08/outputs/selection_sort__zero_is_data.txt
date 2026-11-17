@@ -1,0 +1,5 @@
+before: 0 49 0 50
+round 1: 0 49 0 50
+round 2: 0 0 49 50
+round 3: 0 0 49 50
+sorted: 0 0 49 50

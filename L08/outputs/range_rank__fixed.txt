@@ -1,0 +1,10 @@
+row 0: min=47 max=52 range=5
+row 1: min=49 max=51 range=2
+row 2: min=46 max=54 range=8
+rank 1: row=1 range=2
+rank 2: row=0 range=5
+rank 3: row=2 range=8
+original rows:
+49 52 47 50 52 
+50 50 51 49 50 
+48 54 46 53 49 
