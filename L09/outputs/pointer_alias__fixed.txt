@@ -1,0 +1,5 @@
+initial: a=49, b=52, *p=49, *q=49
+write through p: a=50, b=52, *q=50
+redirect p: *p=52, *q=50
+write b: a=50, b=53, *q=50
+write through q: a=48, b=53

@@ -1,0 +1,3 @@
+after block: *p=53
+inside block: *borrowed=47
+after block: borrowed is null=1

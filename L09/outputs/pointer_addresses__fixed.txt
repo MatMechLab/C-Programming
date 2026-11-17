@@ -1,0 +1,4 @@
+&reading=0x7ffcb4504b2c
+p=0x7ffcb4504b2c
+&p=0x7ffcb4504b30
+p == &reading: 1

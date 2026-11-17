@@ -1,0 +1,2 @@
+*p=0, p is nonnull=1, q is null=1
+x=2, *q=2, p is null=1

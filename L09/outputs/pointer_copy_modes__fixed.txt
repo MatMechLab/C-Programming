@@ -1,0 +1,4 @@
+initial: a=49, b=52, *p=49, *q=52, same=0
+copy value: a=52, b=52, *p=52, *q=52, same=0
+copy address: a=52, b=52, *p=52, *q=52, same=1
+update: a=52, b=54, *p=54, *q=54, same=1

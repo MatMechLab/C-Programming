@@ -1,0 +1,4 @@
+null: positive=0
+zero: positive=0
+positive: positive=1
+negative: positive=0

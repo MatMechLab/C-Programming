@@ -1,0 +1,3 @@
+shared: *p=53, *q=53
+clear p: p is null=1, *q=54
+after block: p is null=1, q is null=1

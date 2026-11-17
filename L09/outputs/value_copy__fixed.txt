@@ -1,0 +1,2 @@
+inside: value=51
+after call: reading=48
