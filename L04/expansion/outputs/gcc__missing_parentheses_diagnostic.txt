@@ -1,0 +1,4 @@
+/home/by/OneDrive/MM-Lab/Teaching/C语言编程/code/L04/expansion/broken/missing_parentheses.c: In function 'main':
+/home/by/OneDrive/MM-Lab/Teaching/C语言编程/code/L04/expansion/broken/missing_parentheses.c:17:23: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   17 |     if (recorded == 1 && value_mm < 48 || value_mm > 52) {
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~

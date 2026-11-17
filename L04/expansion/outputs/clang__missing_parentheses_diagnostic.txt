@@ -1,0 +1,8 @@
+/home/by/OneDrive/MM-Lab/Teaching/C语言编程/code/L04/expansion/broken/missing_parentheses.c:17:23: warning: '&&' within '||' [-Wlogical-op-parentheses]
+   17 |     if (recorded == 1 && value_mm < 48 || value_mm > 52) {
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~ ~~
+/home/by/OneDrive/MM-Lab/Teaching/C语言编程/code/L04/expansion/broken/missing_parentheses.c:17:23: note: place parentheses around the '&&' expression to silence this warning
+   17 |     if (recorded == 1 && value_mm < 48 || value_mm > 52) {
+      |                       ^
+      |         (                             )
+1 warning generated.
