@@ -1,0 +1,3 @@
+normal: sum=1670
+empty: ok=1, sum=0
+invalid: ok=0, kept=-1

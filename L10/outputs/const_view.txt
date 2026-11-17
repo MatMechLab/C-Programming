@@ -1,0 +1,3 @@
+before: 420
+after direct write: 400
+after redirect: 390

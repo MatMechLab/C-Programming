@@ -1,0 +1,3 @@
+inside copy: value=400
+after copy: reading=420
+after pointer: reading=400

@@ -1,0 +1,4 @@
+unfinished local sum=0
+unfinished local sum=0
+empty: ok=0, sum=-1
+invalid: ok=0, kept=-1

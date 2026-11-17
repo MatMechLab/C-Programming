@@ -1,0 +1,3 @@
+closest: index=1, range=390
+invalid: ok=0, kept=-1,-1
+same output: ok=0, kept=-1

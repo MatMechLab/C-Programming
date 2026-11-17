@@ -1,0 +1,2 @@
+first=420, second=410
+selected still points to first: 1

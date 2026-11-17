@@ -1,0 +1,5 @@
+limit=400: count=2
+limit=399: count=1
+empty: ok=1, count=0
+invalid limit: ok=0, kept=-1
+invalid reading: ok=0, kept=-1

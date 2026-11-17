@@ -1,0 +1,4 @@
+before: reading=420, snapshot=420, same_target=1
+after: reading=400, snapshot=420, same_target=1
+zero: nonnull=1, value=0
+empty: is_null=1
