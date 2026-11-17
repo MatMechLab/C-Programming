@@ -1,0 +1,2 @@
+块内：total=6，valid=4
+块外：total=6
