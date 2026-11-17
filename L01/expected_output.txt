@@ -1,0 +1,4 @@
+Sensor Log Analyzer
+Mode: offline teaching demo
+Standard: C17
+Pipeline: acquire -> analyze -> report
