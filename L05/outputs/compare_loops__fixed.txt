@@ -1,0 +1,2 @@
+while结束：i = 3
+do...while结束：j = 4
