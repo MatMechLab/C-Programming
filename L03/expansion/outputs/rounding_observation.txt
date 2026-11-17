@@ -1,0 +1,6 @@
+Local rounding observation; not a universal C17 result.
+FLT_RADIX = 2; DBL_MANT_DIG = 53; FLT_EVAL_METHOD = 0; FLT_ROUNDS = 1
+original long long = 9007199254740993
+stored double = 9007199254740992
+(large + cancel) + small = 1.0
+large + (cancel + small) = 0.0

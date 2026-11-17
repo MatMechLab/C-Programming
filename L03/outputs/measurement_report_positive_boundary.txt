@@ -1,0 +1,4 @@
+Enter three measurements and one reference (mm):
+sum = 29997 mm
+mean = 9999.000 mm
+absolute error = 0.000 mm

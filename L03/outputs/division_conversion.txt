@@ -1,0 +1,9 @@
+5 / 2 -> int: 2
+5 / 2 -> double: 2.0
+(double)(5 / 2): 2.0
+(double)5 / 2: 2.5
+5 / 2.0: 2.5
+original = 5; converted = 5.0
+-5 / 2 = -2
+(int)2.9 = 2; (int)-2.9 = -2
+1250 mm = 1.250 m

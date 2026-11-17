@@ -1,0 +1,2 @@
+Enter elapsed time in seconds (1 to 9999):
+Calculation stopped: elapsed time must not be zero.

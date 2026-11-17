@@ -1,0 +1,213 @@
+{
+  "formula_steps": [
+    {
+      "name": "default",
+      "stdin": "",
+      "expected_returncode": 0,
+      "expected_stdout": "(a + b) / (c + d) = 3.000000\na + b / c + d = 10.333333\n-(a - b) = -4.0\nperimeter = 16; length squared = 25\nafter count /= 2.0: count = 4\n1250 / 1000 = 1\n1250 / 1000.0 = 1.250\n2.0 + 9 / 4 = 4.0\n(2.0 + 9) / 4 = 2.75\n7 / 2 * 2.0 = 6.0\n7 * 2.0 / 2 = 7.0\n(int)2.75 = 2\n(int)-2.75 = -2\nfabs(18.5 - 20.0) = 1.5\nfabs(21.5 - 20.0) = 1.5\n",
+      "category": "fixed_data"
+    }
+  ],
+  "mixed_types": [
+    {
+      "name": "default",
+      "stdin": "",
+      "expected_returncode": 0,
+      "expected_stdout": "f + f = 3.00\nf + n = 3.50\nf + d = 1.75\n",
+      "category": "fixed_data"
+    }
+  ],
+  "rounding_observation": [
+    {
+      "name": "default",
+      "stdin": "",
+      "expected_returncode": 0,
+      "expected_stdout": "Local rounding observation; not a universal C17 result.\nFLT_RADIX = 2; DBL_MANT_DIG = 53; FLT_EVAL_METHOD = 0; FLT_ROUNDS = 1\noriginal long long = 9007199254740993\nstored double = 9007199254740992\n(large + cancel) + small = 1.0\nlarge + (cancel + small) = 0.0\n",
+      "category": "local_observation"
+    }
+  ],
+  "measurement_truncated": [
+    {
+      "name": "default",
+      "stdin": "",
+      "expected_returncode": 0,
+      "expected_stdout": "sum = 55 mm\nmean = 18.000 mm\nabsolute error = 2.000 mm\n",
+      "category": "defined_logic_error"
+    }
+  ],
+  "interval_rate": [
+    {
+      "name": "normal",
+      "stdin": "2 8\n",
+      "category": "contract_success",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 6 s\naverage rate = 3.000 mm/s\n",
+      "independent_fraction": {
+        "elapsed_s": 6,
+        "average_rate_mm_s": "3"
+      }
+    },
+    {
+      "name": "positive_boundary",
+      "stdin": "-999 9999\n",
+      "category": "contract_success",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 10998 s\naverage rate = 0.002 mm/s\n",
+      "independent_fraction": {
+        "elapsed_s": 10998,
+        "average_rate_mm_s": "1/611"
+      }
+    },
+    {
+      "name": "smallest_positive_interval",
+      "stdin": "0 1\n",
+      "category": "contract_success",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 1 s\naverage rate = 18.000 mm/s\n",
+      "independent_fraction": {
+        "elapsed_s": 1,
+        "average_rate_mm_s": "18"
+      }
+    },
+    {
+      "name": "negative_start",
+      "stdin": "-2 0\n",
+      "category": "contract_success",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 2 s\naverage rate = 9.000 mm/s\n",
+      "independent_fraction": {
+        "elapsed_s": 2,
+        "average_rate_mm_s": "9"
+      }
+    },
+    {
+      "name": "plus_sign_and_space",
+      "stdin": "\t+2\n+8\n",
+      "category": "contract_success",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 6 s\naverage rate = 3.000 mm/s\n",
+      "independent_fraction": {
+        "elapsed_s": 6,
+        "average_rate_mm_s": "3"
+      }
+    },
+    {
+      "name": "zero",
+      "stdin": "2 2\n",
+      "category": "zero_denominator_guard",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nCalculation stopped: elapsed time must not be zero.\n"
+    },
+    {
+      "name": "upper_equal",
+      "stdin": "9999 9999\n",
+      "category": "zero_denominator_guard",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nCalculation stopped: elapsed time must not be zero.\n"
+    },
+    {
+      "name": "lower_equal",
+      "stdin": "-999 -999\n",
+      "category": "zero_denominator_guard",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nCalculation stopped: elapsed time must not be zero.\n"
+    },
+    {
+      "name": "negative",
+      "stdin": "8 2\n",
+      "category": "negative_interval_guard",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nCalculation stopped: elapsed time must be positive.\n"
+    },
+    {
+      "name": "negative_boundary",
+      "stdin": "9999 -999\n",
+      "category": "negative_interval_guard",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nCalculation stopped: elapsed time must be positive.\n"
+    },
+    {
+      "name": "bad_first",
+      "stdin": "abc\n",
+      "category": "conversion_failure_or_eof",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nInput error: two integers are required.\n"
+    },
+    {
+      "name": "bad_end",
+      "stdin": "2 abc\n",
+      "category": "conversion_failure_or_eof",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nInput error: two integers are required.\n"
+    },
+    {
+      "name": "missing_end",
+      "stdin": "2\n",
+      "category": "conversion_failure_or_eof",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nInput error: two integers are required.\n"
+    },
+    {
+      "name": "empty",
+      "stdin": "",
+      "category": "conversion_failure_or_eof",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nInput error: two integers are required.\n"
+    },
+    {
+      "name": "whitespace_only",
+      "stdin": " \n\t",
+      "category": "conversion_failure_or_eof",
+      "expected_returncode": 1,
+      "expected_stdout": "Enter start and end times (s):\nInput error: two integers are required.\n"
+    },
+    {
+      "name": "trailing_text",
+      "stdin": "2 8x\n",
+      "category": "limitation_observation",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 6 s\naverage rate = 3.000 mm/s\n",
+      "converted_values": [
+        2,
+        8
+      ],
+      "limitation": "尾随 x 没有被验证",
+      "independent_fraction": {
+        "elapsed_s": 6,
+        "average_rate_mm_s": "3"
+      }
+    },
+    {
+      "name": "extra_item",
+      "stdin": "2 8 99\n",
+      "category": "limitation_observation",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 6 s\naverage rate = 3.000 mm/s\n",
+      "converted_values": [
+        2,
+        8
+      ],
+      "limitation": "多余第3项没有被验证",
+      "independent_fraction": {
+        "elapsed_s": 6,
+        "average_rate_mm_s": "3"
+      }
+    },
+    {
+      "name": "overwide_token",
+      "stdin": "22223333\n",
+      "category": "limitation_observation",
+      "expected_returncode": 0,
+      "expected_stdout": "Enter start and end times (s):\nelapsed = 1111 s\naverage rate = 0.016 mm/s\n",
+      "converted_values": [
+        2222,
+        3333
+      ],
+      "limitation": "单个超宽 token 被拆成两次成功转换",
+      "independent_fraction": {
+        "elapsed_s": 1111,
+        "average_rate_mm_s": "18/1111"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Enter elapsed time in seconds (1 to 9999):
+Input error: one integer is required.

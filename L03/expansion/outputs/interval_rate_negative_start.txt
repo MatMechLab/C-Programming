@@ -1,0 +1,3 @@
+Enter start and end times (s):
+elapsed = 2 s
+average rate = 9.000 mm/s

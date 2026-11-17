@@ -1,0 +1,33 @@
++x = -6
+-x = 6
+x - 2 = -8
+x remains -6
+plain = 8; result = 11
+updated = 11
+add_value after += 5: 22
+subtract_value after -= 5: 12
+multiply_value after *= 5: 85
+divide_value after /= 5: 3
+remainder_value after %= 5: 2
+grouped n = 20
+expanded n = 20
+247 % 10 = 7
+247 / 10 = 24
+247 % 2 = 1
+prefix: value = 4; remaining = 4
+postfix: value = 5; remaining = 4
+assigned = 5
+same = 0; compared = 3
+n < limit: 1
+n <= limit: 1
+n > limit: 0
+n >= limit: 0
+n == limit: 0
+n != limit: 1
+!ready = 0
+!fault = 1
+ready && fault = 0
+fault && ready = 0
+ready || fault = 1
+ready && !fault = 1
+flag_two && flag_one = 1

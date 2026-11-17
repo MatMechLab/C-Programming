@@ -1,0 +1,3 @@
+sum = 55 mm
+mean = 18.000 mm
+absolute error = 2.000 mm

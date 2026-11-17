@@ -1,0 +1,2 @@
+Enter start and end times (s):
+Input error: two integers are required.

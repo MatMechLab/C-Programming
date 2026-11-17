@@ -1,0 +1,2 @@
+Enter start and end times (s):
+Calculation stopped: elapsed time must be positive.

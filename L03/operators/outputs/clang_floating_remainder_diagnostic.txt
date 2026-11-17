@@ -1,0 +1,4 @@
+/home/by/OneDrive/MM-Lab/Teaching/C语言编程/code/L03/operators/broken/floating_remainder.c:4:28: error: invalid operands to binary expression ('double' and 'double')
+    4 |     double remainder = 5.0 % 2.0;
+      |                        ~~~ ^ ~~~
+1 error generated.

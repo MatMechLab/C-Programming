@@ -1,0 +1,9 @@
+Local floating-point observation; not a universal C17 output.
+FLT_RADIX = 2; DBL_MANT_DIG = 53; FLT_EVAL_METHOD = 0
+0.1 + 0.2 stored as double = 0.30000000000000004
+0.3 stored as double = 0.29999999999999999
+difference = 5.5511151231257827e-17
+equal in this run = 0
+measurement absolute error = 0.030 mm
+exercise tolerance = 0.050 mm
+within exercise tolerance = 1

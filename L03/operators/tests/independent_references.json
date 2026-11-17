@@ -1,0 +1,440 @@
+{
+  "main": {
+    "unary": {
+      "original": -6,
+      "unary_plus": -6,
+      "unary_minus": 6,
+      "subtract_two": -8,
+      "original_after": -6
+    },
+    "value_and_update": {
+      "plain_before_after": [
+        8,
+        8
+      ],
+      "result": 11,
+      "updated_before_after": [
+        8,
+        11
+      ]
+    },
+    "compound_independent_initials": [
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "compound_results": {
+      "+=": 22,
+      "-=": 12,
+      "*=": 85,
+      "/=": 3,
+      "%=": 2
+    },
+    "grouped_distributive_check": {
+      "initials": [
+        4,
+        4,
+        4
+      ],
+      "a": 2,
+      "b": 3,
+      "4a_plus_4b": 20,
+      "grouped": 20,
+      "expanded": 20,
+      "mistaken": 11
+    },
+    "decrement": {
+      "prefix": {
+        "start": 5,
+        "expression_value": 4,
+        "stored_after": 4
+      },
+      "postfix": {
+        "start": 5,
+        "expression_value": 5,
+        "stored_after": 4
+      }
+    },
+    "assignment_comparison": {
+      "assigned_after": 5,
+      "compared_before_after": [
+        3,
+        3
+      ],
+      "same": 0
+    }
+  },
+  "boundary": {
+    "remainder": [
+      {
+        "number": 0,
+        "decimal_string": "0",
+        "digit": 0,
+        "prefix": 0,
+        "binary_last_digit": 0,
+        "reconstruction": "0 = 10 * 0 + 0"
+      },
+      {
+        "number": 1,
+        "decimal_string": "1",
+        "digit": 1,
+        "prefix": 0,
+        "binary_last_digit": 1,
+        "reconstruction": "1 = 10 * 0 + 1"
+      },
+      {
+        "number": 8,
+        "decimal_string": "8",
+        "digit": 8,
+        "prefix": 0,
+        "binary_last_digit": 0,
+        "reconstruction": "8 = 10 * 0 + 8"
+      },
+      {
+        "number": 9,
+        "decimal_string": "9",
+        "digit": 9,
+        "prefix": 0,
+        "binary_last_digit": 1,
+        "reconstruction": "9 = 10 * 0 + 9"
+      },
+      {
+        "number": 10,
+        "decimal_string": "10",
+        "digit": 0,
+        "prefix": 1,
+        "binary_last_digit": 0,
+        "reconstruction": "10 = 10 * 1 + 0"
+      },
+      {
+        "number": 19,
+        "decimal_string": "19",
+        "digit": 9,
+        "prefix": 1,
+        "binary_last_digit": 1,
+        "reconstruction": "19 = 10 * 1 + 9"
+      },
+      {
+        "number": 247,
+        "decimal_string": "247",
+        "digit": 7,
+        "prefix": 24,
+        "binary_last_digit": 1,
+        "reconstruction": "247 = 10 * 24 + 7"
+      },
+      {
+        "number": 250,
+        "decimal_string": "250",
+        "digit": 0,
+        "prefix": 25,
+        "binary_last_digit": 0,
+        "reconstruction": "250 = 10 * 25 + 0"
+      },
+      {
+        "number": 32767,
+        "decimal_string": "32767",
+        "digit": 7,
+        "prefix": 3276,
+        "binary_last_digit": 1,
+        "reconstruction": "32767 = 10 * 3276 + 7"
+      }
+    ],
+    "comparison": [
+      {
+        "n": 5,
+        "limit": 8,
+        "difference": -3,
+        "order_sign": -1,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "n": 5,
+        "limit": 5,
+        "difference": 0,
+        "order_sign": 0,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "n": 9,
+        "limit": 8,
+        "difference": 1,
+        "order_sign": 1,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "n": 0,
+        "limit": 0,
+        "difference": 0,
+        "order_sign": 0,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "n": -1,
+        "limit": 0,
+        "difference": -1,
+        "order_sign": -1,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "n": 0,
+        "limit": -1,
+        "difference": 1,
+        "order_sign": 1,
+        "operator_order": [
+          "<",
+          "<=",
+          ">",
+          ">=",
+          "==",
+          "!="
+        ],
+        "truth_vector": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      }
+    ],
+    "logical": [
+      {
+        "left": 0,
+        "right": 0,
+        "classification": [
+          false,
+          false
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "left": 0,
+        "right": 1,
+        "classification": [
+          false,
+          true
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "left": 1,
+        "right": 0,
+        "classification": [
+          true,
+          false
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "left": 1,
+        "right": 1,
+        "classification": [
+          true,
+          true
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "left": 2,
+        "right": 1,
+        "classification": [
+          true,
+          true
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "left": 2,
+        "right": 0,
+        "classification": [
+          true,
+          false
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "left": -2,
+        "right": 5,
+        "classification": [
+          true,
+          true
+        ],
+        "operator_order": [
+          "!left",
+          "!right",
+          "left&&right",
+          "left||right",
+          "left&&!right"
+        ],
+        "truth_vector": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      }
+    ],
+    "negative_remainder_exception": {
+      "quotient_toward_zero": -1,
+      "remainder_from_identity": -1,
+      "scope": "仅教师核验：非负奇数余数1的结论不推广到负奇数。"
+    }
+  }
+}

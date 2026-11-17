@@ -1,0 +1,2 @@
+correct mean = 11.333 mm
+correct grouped mean = 11.333 mm
